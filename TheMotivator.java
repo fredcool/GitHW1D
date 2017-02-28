@@ -11,6 +11,19 @@ public class TheMotivator
 		else
 			System.out.println("Well, what can I say?");
 	}
+	
+	public void feedbackByGPA(double GPA) 
+	{
+		if (GPA >= 3.8)
+			System.out.println("A+");
+		else if (GPA >= 3.5)
+			System.out.println("A");
+		else if (GPA >= 3.2)
+			System.out.println("B");
+		else
+			System.out.println("C");
+	}
+	
 	public static void main(String[] args) {
 		TheMotivator tm = new TheMotivator();
 		tm.feedback(60);
